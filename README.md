@@ -39,8 +39,7 @@ Aplicación web progresiva (PWA) desarrollada en **Oracle APEX 26.2.1** para el 
 
 ## 🗄️ Modelo de Datos y Objetos de Soporte
 
-El paquete de exportación incluye los *Supporting Objects* y paquetes de datos iniciales (`APEX$DATA$PKG`) para las siguientes tablas:
+La estructura completa de tablas, restricciones, datos iniciales y objetos de soporte está contenida dentro de los scripts SQL del repositorio (exportación de aplicación y/o DDL):
 
-| Tabla | Descripción |
-| :--- | :--- |
-| `MOVIMIENTOS_FINANCIEROS` | Tabla transaccional principal de ingresos, egresos y
+* **Tablas principales:** `MOVIMIENTOS_FINANCIEROS`, `TASA_CAMBIO_HISTORICO`, `CAT_PROYECTOS`, `CAT_CATEGORIAS` y `CAT_ORIGENES`.
+* **Objetos y automatización:** *Supporting Objects* y paquetes de carga inicial de APEX, proceso `APP_TASA_ACTUAL` (`&G_TASA_ACTUAL.`), integración REST con `https://ve.dolarapi.com/v1/dolares/oficial` y automatización `Auto_Actualizar_Tasa_BCV`.
